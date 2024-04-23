@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Meditation</title>
+    <link rel="stylesheet" href="/accueil.css">
+</head>
+<body>
+    <header>
+
+        <div class="title">
+            <i class='bx bx-menu burger' id="burger"></i>
+            
+        </div>
+        <div class="descript">
+            <p> <strong>Good morning</strong> <br>Nzo</p>
+        </div>
+        <div class="input">
+            <input type="text" placeholder="Rechercher">
+            <i class='bx search-icone bx-search'></i>
+        </div>
+    </header>
+    <main>
+        <div class="list-card">
+            <div class="carton" id="idRecom">
+                <img src="/assets/icons/Hamburger.svg" alt="">
+                <span>Recommandation</span>
+            </div>
+            <div class="carton" id="idKegelExercise">
+                <img src="/assets/icons/Excrecises.svg" alt="">
+                <span>Kegel exercises</span>
+            </div>
+            <div class="carton" id="idMeditation">
+                <img src="/assets/icons/Meditation.svg" alt="">
+                <span>Meditation</span>
+            </div>
+            <div class="carton" id="idYoga">
+                <img src="/assets/icons/yoga.svg" alt="">
+                <span>Yoga</span>
+            </div>
+        </div>
+        <div class="autres">
+            <button>Voir plus</button>
+        </div>
+    </main>
+    <footer>
+        <div class="card1" id="today">
+            <img src="/assets/icons/calendar.svg" alt="">
+            <a href="#">Today</a>
+        </div>
+        <div class="card2" id="allExercise">
+            <img src="/assets/icons/gym.svg" alt="">
+            <a href="#">All Exercises</a>
+        </div>
+        <div class="card3" id="setting">
+            <img src="/assets/icons/Settings.svg" alt="">
+            <a href="#">Settings</a>
+        </div>
+    </footer>
+    <!-- 
+        TAPS & DESCRIPTION SERVICE
+    -->
+
+    <div  class="recommandation" id="idRecommandationDescription">
+        <div class="quit">
+            <a >Retour</a>
+        </div>
+        <p>Description recommandation</p>
+    </div>
+    <div  class="kegel-exercise" >
+        <div class="quit">
+            <a >Retour</a>
+        </div>
+        <p>Description Kegel Exercises</p>
+    </div>
+    <div  class="meditation" id="idMeditationDescription">
+        <div class="serviceHeader">
+            <div class="quit">
+                <a >Retour</a>
+            </div>
+            
+            <div class="descript">
+                <p> <strong>Meditation</strong></p>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Rechercher">
+                <i class='bx search-icone bx-search'></i>
+            </div>
+        </div>
+
+        <div class="list-sessions">
+            <div class="session">
+                <img src="/assets/icons/playing.png" alt="">
+                <span>Session 01</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/playing.png" alt="">
+                <span>Session 02</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/playing.png" alt="">
+                <span>Session 03</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/playing.png" alt="">
+                <span>Session 04</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/playing.png" alt="">
+                <span>Session 05</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/playing.png" alt="">
+                <span>Session 06</span>
+            </div>
+        </div>
+        
+
+    </div>
+    <div  class="yoga" id="idYogaDescription">
+        <div class="quit" >
+            <a >Retour</a>
+        </div>
+        <p>
+            <strong>Yoga</strong>
+            <br>
+        </p>
+    </div>
+    <div  class="taps">
+        <div class="quit" id="cancel">
+            <a >Retour</a>
+        </div>
+        <p>Planning</p>
+        <div class="taps-1">
+
+        </div>
+        <div class="taps-2">
+            
+        </div>
+        <div class="taps-3">
+            
+        </div>
+
+    </div>
+
+    <div  class="burger-pop" id="canceling-mode">
+        <div class="quit" id="cancelBurger">
+            <a >Retour</a>
+        </div>
+        <p>Infos sur le profil</p>
+    </div>
+    <div  class="allExercise">
+        <div class="quit" id="cancelAllExercise">
+            <a >Retour</a>
+        </div>
+        <p>Liste de mes exercises</p>
+    </div>
+    <div  class="setting">
+        <div class="quit" id="cancelSetting">
+            <a >Retour</a>
+        </div>
+        <p>Paramètres de l'application</p>
+    </div>
+    <div class="today">
+        <div class="quit" id="cancelToday">
+            <a >Retour</a>
+        </div>
+        <p>Planning quotidien</p>
+    </div>
+
+    <script src="/src/main.js"></script>
+</body>
+</html>
