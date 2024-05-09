@@ -6,17 +6,15 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link
     rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Meditation</title>
     <link rel="stylesheet" href="/accueil.css">
+    <link rel="icon" sizes="160x180" href="/assets/icons/logo.ico">
 </head>
 <body>
     <header>
-
         <div class="title">
             <i class='bx bx-menu burger' id="burger"></i>
-            
         </div>
         <div class="descript">
             <p> <strong>Good morning</strong> <br>Nzo</p>
@@ -46,7 +44,7 @@
             </div>
         </div>
         <div class="autres">
-            <button>Voir plus</button>
+            <button>View All</button>
         </div>
     </main>
     <footer>
@@ -68,25 +66,61 @@
     -->
 
     <div  class="recommandation" id="idRecommandationDescription">
-        <div class="quit">
-            <a >Retour</a>
-        </div>
-        <p>Description recommandation</p>
-    </div>
-    <div  class="kegel-exercise" >
-        <div class="quit">
-            <a >Retour</a>
-        </div>
-        <p>Description Kegel Exercises</p>
-    </div>
-    <div  class="meditation" id="idMeditationDescription">
         <div class="serviceHeader">
-            <div class="quit">
-                <a >Retour</a>
+            <div class="quit" id="idquitRecommandation">
+                <i class='bx bx-arrow-back back'></i>
             </div>
             
             <div class="descript">
-                <p> <strong>Meditation</strong></p>
+                <p><strong>Recommandation</strong></p>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Rechercher">
+                <i class='bx search-icone bx-search'></i>
+            </div>
+        </div>
+        <div class="list-sessions">
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="" id="maskPlay">
+                <img src="/assets/icons/pauseButton.png" alt="" id="maskPause">
+                <audio src="/assets/audios/painaulait.m4a" id="audioPlayer"></audio>
+                <span>Session 01</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 02</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 03</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="" >
+                
+                <span>Session 04</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 05</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 06</span>
+            </div>
+        </div>
+        <div class="complement">
+            <br>
+            <p style="color: red;justify-content: center;text-align: center;">Cette partie est en cours de traitement</p>
+        </div>
+    </div>
+    <div  class="kegel-exercise" id="idKegelExericiseDescription">
+        <div class="serviceHeader">
+            <div class="quit" id="idquitKegelExericise">
+                <i class='bx bx-arrow-back back'></i>
+            </div>
+            
+            <div class="descript">
+                <p><strong>Kegel Exercises</strong></p>
             </div>
             <div class="input">
                 <input type="text" placeholder="Rechercher">
@@ -96,49 +130,143 @@
 
         <div class="list-sessions">
             <div class="session">
-                <img src="/assets/icons/playing.png" alt="">
+                <img src="/assets/icons/player.png" alt="" class="maskPlay">
+                <img src="/assets/icons/pauseButton.png" alt="" class="maskPause">
+                <audio src="/assets/audios/painaulait.m4a" class="audioPlayer"></audio>
                 <span>Session 01</span>
+                
             </div>
             <div class="session">
-                <img src="/assets/icons/playing.png" alt="">
+                <img src="/assets/icons/player.png" alt="">
                 <span>Session 02</span>
             </div>
             <div class="session">
-                <img src="/assets/icons/playing.png" alt="">
+                <img src="/assets/icons/player.png" alt="">
                 <span>Session 03</span>
             </div>
             <div class="session">
-                <img src="/assets/icons/playing.png" alt="">
+                <img src="/assets/icons/player.png" alt="" >
+                
                 <span>Session 04</span>
             </div>
             <div class="session">
-                <img src="/assets/icons/playing.png" alt="">
+                <img src="/assets/icons/player.png" alt="">
                 <span>Session 05</span>
             </div>
             <div class="session">
-                <img src="/assets/icons/playing.png" alt="">
+                <img src="/assets/icons/player.png" alt="">
                 <span>Session 06</span>
             </div>
         </div>
-        
+        <div class="complement">
+            <br>
+            <p style="color: red;justify-content: center;text-align: center;">Cette partie est en cours de traitement</p>
+        </div>
+    </div>
+    <div  class="meditation" id="idMeditationDescription">
+        <div class="serviceHeader">
+            <div class="quit" id="idquitMeditation">
+                <i class='bx bx-arrow-back back'></i>
+            </div>
+            
+            <div class="descript">
+                <p><strong>Meditation</strong></p>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Rechercher">
+                <i class='bx search-icone bx-search'></i>
+            </div>
+        </div>
 
+        <div class="list-sessions">
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="" class="maskPlay">
+                <img src="/assets/icons/pauseButton.png" alt="" class="maskPause">
+                <audio src="/assets/audios/painaulait.m4a" class="audioPlayer"></audio>
+                <span>Session 01</span>
+                
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 02</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 03</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="" >
+                
+                <span>Session 04</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 05</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 06</span>
+            </div>
+        </div>
+        <div class="complement">
+            <br>
+            <p style="color: red;justify-content: center;text-align: center;">Cette partie est en cours de traitement</p>
+        </div>
     </div>
     <div  class="yoga" id="idYogaDescription">
-        <div class="quit" >
-            <a >Retour</a>
+        <div class="serviceHeader">
+            <div class="quit" id="idquitYoga">
+                <i class='bx bx-arrow-back back'></i>
+            </div>
+            <div class="descript">
+                <p><strong>Yoga</strong></p>
+            </div>
+            <div class="input">
+                <input type="text" placeholder="Rechercher">
+                <i class='bx search-icone bx-search'></i>
+            </div>
         </div>
-        <p>
-            <strong>Yoga</strong>
+        <div class="list-sessions">
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="" class="maskPlay">
+                <img src="/assets/icons/pauseButton.png" alt="" class="maskPause">
+                <audio src="/assets/audios/painaulait.m4a" class="audioPlayer"></audio>
+                <span>Session 01</span>
+                
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 02</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 03</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="" >
+                <span>Session 04</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 05</span>
+            </div>
+            <div class="session">
+                <img src="/assets/icons/player.png" alt="">
+                <span>Session 06</span>
+            </div>
+        </div>
+        <div class="complement">
             <br>
-        </p>
+            <p style="color: red;justify-content: center;text-align: center;">Cette partie est en cours de traitement</p>
+        </div>
     </div>
     <div  class="taps">
         <div class="quit" id="cancel">
-            <a >Retour</a>
+            <i class='bx bx-arrow-back back'></i>
         </div>
         <p>Planning</p>
         <div class="taps-1">
-
+            
         </div>
         <div class="taps-2">
             
@@ -146,34 +274,51 @@
         <div class="taps-3">
             
         </div>
-
     </div>
-
     <div  class="burger-pop" id="canceling-mode">
         <div class="quit" id="cancelBurger">
-            <a >Retour</a>
+            <i class='bx bx-arrow-back back'></i>
         </div>
-        <p>Infos sur le profil</p>
+        <div class="profil">
+            <img src="/assets/images/Profil_MN.jpg" alt="" id="profil">
+            <div class="profil-items">
+                <div class="accueil">
+                    <img src="/assets/icons/accueil-icon.png" alt="">
+                    <a href=""><strong>Accueil</strong></a>
+                </div>
+                <div class="monCompte">
+                    <img src="/assets/icons/utilisateur.png" alt="">
+                    <a href=""><strong>Mon compte</strong></a>
+                </div>
+                <div class="deconnexion">
+                    <img src="/assets/icons/deconnexion.png" alt="">
+                    <a href=""><strong>Se déconnecter</strong></a>
+                </div>
+                
+            </div>
+            <div class="isDoing">
+                <p style="color: red;justify-content: center; text-align: center;">En cours de traitement</p>
+            </div>
+        </div>
     </div>
     <div  class="allExercise">
         <div class="quit" id="cancelAllExercise">
-            <a >Retour</a>
+            <i class='bx bx-arrow-back back'></i>
         </div>
         <p>Liste de mes exercises</p>
     </div>
     <div  class="setting">
         <div class="quit" id="cancelSetting">
-            <a >Retour</a>
+            <i class='bx bx-arrow-back back'></i>
         </div>
         <p>Paramètres de l'application</p>
     </div>
     <div class="today">
         <div class="quit" id="cancelToday">
-            <a >Retour</a>
+            <i class='bx bx-arrow-back back'></i>
         </div>
         <p>Planning quotidien</p>
     </div>
-
     <script src="/src/main.js"></script>
 </body>
 </html>
